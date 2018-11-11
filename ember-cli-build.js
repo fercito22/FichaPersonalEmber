@@ -11,16 +11,16 @@ module.exports = function(defaults) {
     }
   });
 
-  // included: function(app) { 
-  //   app.import('vendor/style.css'); 
-  //   } 
+  // included: function(app) {
+  //   app.import('vendor/style.css');
+  //   }
 
   //app.import('bower_components/javascript/custom.js' ) ; //, { destDir: 'fonts' });
   //app.import('bower_components/javascript/jquery-2.1.3.min.js' ) ; //, { destDir: 'fonts' });
   //app.import('bower_components/css/style.css' ) ; //, { destDir: 'fonts' });
-  app.import(app.bowerDirectory + '/javascript/jquery-2.1.3.min.js');
-  app.import(app.bowerDirectory + '/javascript/custom.js');
-  app.import(app.bowerDirectory + '/css/style.css');
+  // app.import(app.bowerDirectory + '/javascript/jquery-2.1.3.min.js');
+  // app.import(app.bowerDirectory + '/javascript/custom.js');
+  // app.import(app.bowerDirectory + '/css/style.css');
   
 
   // Use `app.import` to add additional libraries to the generated
