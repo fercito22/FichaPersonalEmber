@@ -1,0 +1,17 @@
+<h3>Bachiller</h3>
+{{#each webapidata as |item|}} 
+    <li id="profile" class="right">
+        Tipo Colegio: {{item.TipoColegio}}
+    </li>
+    <li id="profile" class="right">
+        Nombre Colegio : {{item.NombreColegio}}
+    </li>
+    <li id="profile" class="right">
+        Lugar: {{item.Lugar}}
+    </li>
+    <li id="profile" class="right">
+        Ultimo Curso Vencido : {{item.UltimoCursoVencido}}
+    </li>
+    <hr>
+            
+{{/each}}

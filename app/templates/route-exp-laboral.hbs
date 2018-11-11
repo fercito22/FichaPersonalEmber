@@ -1,0 +1,80 @@
+<h3>Experiencia Laboral</h3>
+{{!-- {{#each webapidata as |item|}} 
+    <li id="profile" class="right">
+        Tipo Institucion: {{item.tipoInstitucion}}
+    </li>
+    <li id="profile" class="right">
+        Institucion : {{item.Institucion}}
+    </li>
+    <li id="profile" class="right">
+        Cargo: {{item.Cargo}}
+    </li>
+    <li id="profile" class="right">
+        Fecha Inicio : {{item.fechaDesde}}
+    </li>
+    <li id="profile" class="right">
+        Fecha Fin: {{item.fechaHasta}}
+    </li>
+    <li id="profile" class="right">
+        Motivo Retiro : {{item.motivoCambio}}
+    </li> 
+    <hr>
+            
+{{/each}} --}}
+
+
+
+<!--==========================================
+                   Experiencia Laboral
+===========================================-->
+{{!-- <div id="experiencia" class="section">
+    <div class="container">
+      <div class="section-title" id="seccionTitulo">
+          <h4 class="text-uppercase text-center"><i class="title-icon fa fa-graduation-cap"></i>Experiencia Laboral</h4>
+      </div>
+        <div class="row">
+            <div class="col-md-12">
+               
+
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+
+ <!-- DETAILS -->
+                <div id="about-card" class="card">
+                    <div class="card-content"  id="contenido">
+                        <!-- ABOUT PARAGRAPH -->                       
+
+                        <h4 id="tituloTabla">Formacion Academica</h4>
+                        <hr id="separador">
+                        <div class="table-responsive">
+                          <table class="table table-bordered">
+                            <thead>
+                                {{!-- class="success"  --}}
+                               <tr style="font-weight: bold; font-size: 1.5 em"> 
+                                   <th>Tipo Empresa</th>
+                                   <th>Nombre Institucion</th>
+                                   <th>Cargo</th>
+                                   <th>Desde</th>
+                                   <th>Hasta</th>
+                                   <th>Motivo Retiro</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               {{#each webapidata as |item|}}
+                                    <tr class="info">
+                                        <th>Tipo Empresa: {{item.tipoInstitucion}}</th>
+                                        <th>Nombre Institucion: {{item.Institucion}}</th>
+                                        <th>Cargo : {{item.Cargo}}</th>
+                                        <th>Desde : {{item.fechaDesde}}</th>
+                                        <th>Hasta : {{item.fechaHasta}}</th>
+                                        <th>Motivo Retiro : {{item.motivoCambio}}</th>
+                                    </tr>
+                                {{/each}}
+                             </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>

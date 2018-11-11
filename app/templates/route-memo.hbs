@@ -1,0 +1,26 @@
+<h3>Memos</h3>
+{{#each webapidata as |item|}} 
+    <li id="profile" class="right">
+        Tipo Memo: {{item.tipo_llamada_atecion}}
+    </li>
+    <li id="profile" class="right">
+        Motivo Memo : {{item.motivo_llamada_atencion}}
+    </li>
+    <li id="profile" class="right">
+        Nombre Emisor: {{item.nombre_emisor_memo}}
+    </li>
+    <li id="profile" class="right">
+        Cite : {{item.numero_cite_memo}}
+    </li>
+    <li id="profile" class="right">
+        Fecha Emision: {{item.fecha_emision}}
+    </li>
+    <li id="profile" class="right">
+        Fecha Visacion : {{item.fecha_visacion}}
+    </li>
+    <li id="profile" class="right">
+        Estado : {{item.estadoMemo}}
+    </li>  
+    <hr>
+            
+{{/each}}

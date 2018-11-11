@@ -1,0 +1,55 @@
+<h3>Idiomas</h3>
+{{#each webapidata4 as |item|}} 
+    <li id="profile" class="right">
+        Idioma: {{item.Nombre}}
+    </li>
+    <li id="profile" class="right">
+        Lee: {{item.Lee}}
+    </li>
+    <li id="profile" class="right">
+        Habla: {{item.Habla}}
+    </li>
+    <li id="profile" class="right">
+        Escribe: {{item.Escribe}}
+    </li>
+
+    {{#if (is-eq item.Habla "Alto")}}
+        <strong> Habla: {{item.Habla}}</strong>
+    {{/if}}               
+{{/each}}
+
+
+
+
+
+{{#each webapidata4 as |item|}} 
+{{!-- <div class="cards"><a class="stack" href="#"> --}}
+    <div class="card top">
+      <div class="contents">
+        <h2><strong>{{item.Nombre}}</strong>Design
+        </h2>
+        <h3>Don Joel</h3>Ing. Sistemas<br/><br/><span>✉️</span>donjoel@example.com<br/><span>📞</span>(123) 456-7890<br/><br/>123 Nowhere Street<br/>Dover, DE
+      </div>
+    </div>
+    <div class="card mid-top">
+      <div class="contents">
+        <div class="city">Dover, DE</div>
+      </div>
+    </div>
+    <div class="card middle">
+      <div class="contents">
+        <div class="city">Dover, DE</div>
+      </div>
+    </div>
+    <div class="card mid-bottom">
+      <div class="contents">
+        <div class="city">Dover, DE</div>
+      </div>
+    </div>
+    <div class="card bottom">
+      <div class="contents">
+        <div class="city">Dover, DE</div>
+      </div>
+    </div>
+
+    {{/each}}

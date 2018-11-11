@@ -1,0 +1,30 @@
+<h3>Comunicacion</h3>
+{{#each webapidata as |item|}} 
+    {{!-- <li id="profile" class="right">
+        Valor: {{item.Valor}}
+    </li> --}}
+    <hr>  
+
+    {{#if (is-eq item.tipoComunicacionID 1)}}
+        Telefono Fijo: {{item.Valor}}
+    {{/if}}
+    {{#if (is-eq item.tipoComunicacionID 2)}}
+        Telefono Cel: {{item.Valor}}
+    {{/if}}
+    {{#if (is-eq item.tipoComunicacionID 3)}}
+        Email Personal: {{item.Valor}}
+    {{/if}}
+    {{#if (is-eq item.tipoComunicacionID 4)}}
+        Email BoA: {{item.Valor}}
+    {{/if}}
+    {{#if (is-eq item.tipoComunicacionID 5)}}
+        Telefono Fijo BoA: {{item.Valor}}
+    {{/if}}
+    {{#if (is-eq item.tipoComunicacionID 6)}}
+        Telefono Cel. Boa: {{item.Valor}}
+    {{/if}}
+    {{!-- {{#unless (es-igual  item.tipoComunicacionID 1)}}
+        <span>{{Course.Duration}}<span> {{to-upper resourceLoader.resourcesES.Weeks}}</span></span>
+    {{/unless}} --}}
+            
+{{/each}}

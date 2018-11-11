@@ -1,0 +1,133 @@
+
+<h3>Perfil Completo</h3>
+
+<div class="div1">
+        <h1 class="div1">Prueba de estilo</h1>
+</div>
+
+{{!-- 
+
+{{#each webapidata as |item|}} 
+    <div >
+
+    </div>
+    <li id="profile" class="right">
+        Nombre1 : {{item.Nombre1}}
+    </li>
+    <li id="profile" class="right">
+        Apellido1 : {{item.Apellido1}}
+    </li>
+    <li id="profile" class="right">
+        Apellido2 : {{item.Apellido2}}
+    </li>
+    <li id="profile" class="right">
+        FechaNacimiento : {{item.FechaNacimiento}}
+    </li>
+    <li id="profile" class="right">
+        edad : {{item.edad}}
+    </li>
+    <li id="profile" class="right">
+        Genero : {{item.Genero}}
+    </li>
+    <li id="profile" class="right">
+        Nacionalidad : {{item.Nacionalidad}}
+    </li>
+    <li id="profile" class="right">
+        LugarDeNacimiento : {{item.LugarDeNacimiento}}
+    </li>
+    <li id="profile" class="right">
+        Direccion : {{item.Direccion}}
+    </li>
+    <li id="profile" class="right">
+        EstadoCivil : {{item.EstadoCivil}}
+    </li>
+    <li id="profile" class="right">
+        tipoComunicacionID : {{item.tipoComunicacionID}}
+    </li>
+    <li id="profile" class="right">
+        Nombre : {{item.Nombre}}
+    </li>
+    <li id="profile" class="right">
+        Valor : {{item.Valor}}
+    </li>    
+   
+    <hr>
+            
+{{/each}} --}}
+
+
+
+<div class="header-background1 section">
+        <div id="v-card-holder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <!-- V-CARD -->
+                        <div id="v-card" class="card" >  
+                           <h2>Servisios</h2>
+                            {{#each webapidata as |item|}}  
+                                <div id="profile" class="right">
+                                    {{!-- <img alt="profile-image" class="img-responsive" src="images/jhon1.jpeg"> --}}
+                                    <div class="slant"></div>
+                                </div>                                 
+                            <div class="card-content" id="contenido">
+
+                                <!-- NAME & STATUS -->
+                                <div class="info-headings">
+                                    <h4 class="text-uppercase left">{{item.Nombres}} {{item.ApellidoPaterno}} {{item.ApellidoMaterno}}</h4>
+                                    <h6 class="text-capitalize left">Ingeniero en Sistemas</h6>
+                                </div>
+
+                                <!-- CONTACT INFO -->
+                                <div class="infos" id="info">
+                                    <ul class="profile-list">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <li class="clearfix">
+                                            <span class="title">Edad: {{item.edad}}</span>
+                                        </li>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <li class="clearfix">
+                                            <span class="title">Fecha Nacimiento: {{item.FechaNacimiento}}</span>
+                                        </li>
+                                      </div>
+                                      </div>                                    
+
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <li class="clearfix">
+                                              <span class="title">Direccion: Zona Sacaba</span>
+                                          </li>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <li class="clearfix">
+                                              <span class="title">Estado Civil: {{item.EstadoCivil}}</span>
+                                          </li>
+                                        </div>
+                                        </div>
+                                        
+                                       
+                                           <hr>
+                                          <span class="title">Contacto de Emergencia</span><br>
+                                            
+                                            {{!-- {{partial 'contact'}} --}}
+                                            
+                                    </ul>
+                                </div>                                
+                            </div>
+
+
+                            {{/each}}
+
+                            <!-- PROFILE PICTURE -->
+                            
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

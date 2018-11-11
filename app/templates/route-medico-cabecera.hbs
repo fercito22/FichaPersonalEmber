@@ -1,0 +1,24 @@
+<h3>Medico Cabecera</h3>
+{{#each webapidata as |item|}} 
+    <li id="profile" class="right">
+        Nombre Medico: {{item.NombreMedico}}
+    </li>
+    <li id="profile" class="right">
+        Telefono Medico: {{item.TelefonoMedico}}
+    </li>
+    <li id="profile" class="right">
+        Celular Medico: {{item.NroCelularMedico}}
+    </li>
+    <li id="profile" class="right">
+        Alergias Medicas: {{item.AlergiasMedicas}}
+    </li>
+    <li id="profile" class="right">
+        Medicamentos: {{item.Medicamentos}}
+    </li> 
+    <li id="profile" class="right">
+        Direccion Medico: {{item.DireccionMedico}}
+    </li> 
+    <li id="profile" class="right">
+        Tipo de Sangre: RH {{item.GrupoSanquineo}}{{item.RH_Sanguineo}}
+    </li>                
+{{/each}}

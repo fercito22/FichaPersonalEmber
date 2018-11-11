@@ -1,0 +1,91 @@
+{{!-- <h3>Declaracion</h3>
+{{#each webapidata as |item|}} 
+    <li id="profile" class="right">
+        parentescoID: {{item.parentescoID}}
+    </li>
+    <li id="profile" class="right">
+        Nombre : {{item.Nombres}}
+    </li>
+    <li id="profile" class="right">
+        Apellido1: {{item.Apellido1}}
+    </li>
+    <li id="profile" class="right">
+        Apellido2 : {{item.Apellido2}}
+    </li>
+    <li id="profile" class="right">
+        Tipo_NroDocumento : {{item.Tipo_NroDocumento}}
+    </li>
+    <li id="profile" class="right">
+        Beneficiario : {{item.Beneficiario}}
+    </li>
+    <li id="profile" class="right">
+        Finado : {{item.Finado}}
+    </li>
+    <li id="profile" class="right">
+        Tipo Parentesco : {{item.TipoParentesco}}
+    </li>
+    <hr>
+            
+{{/each}} --}}
+
+
+
+<!--==========================================
+                   DECLARACION
+===========================================-->
+<section id="experience" class="section">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-suitcase"></i>Entrenamiento</h4>
+        </div>
+
+        <div id="timeline-experience">
+
+            {{#each webapidata as |item|}} 
+                <!-- FIRST TIMELINE -->
+                <div class="timeline-block">
+                    <!-- DOT -->
+                    <div class="timeline-dot"><h6>Letra</h6></div>
+                    <!-- TIMELINE CONTENT -->
+                    <div class="card timeline-content">
+                        <div class="card-content">
+                            <!-- TIMELINE TITLE -->
+                            <h6 class="timeline-title">{{item.Nombres}} {{item.Apellido1}} {{item.Apellido2}}</h6>
+                            <!-- TIMELINE TITLE INFO -->
+                            <div class="timeline-info">                                
+                                <h6>
+                                    N° Documento:
+                                    <small>{{item.Tipo_NroDocumento}}</small>
+                                </h6>
+                                <h6>
+                                    Beneficiario:
+                                    <small>{{item.Beneficiario}}</small>
+                                </h6>
+                                <h6>
+                                    Finado:
+                                    <small>{{item.Finado}}</small>
+                                </h6>
+                                <h6>
+                                    Parentesco:
+                                    <small>{{item.TipoParentesco}}</small>
+                                </h6>
+                            </div>
+                            <!-- TIMELINE PARAGRAPH -->
+                            <p>
+                                {{item.Descripcion}}
+                            </p>
+                            <!-- BUTTON TRIGGER MODAL -->
+                            <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-4">
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+
+        </div>
+    </div>
+</section>
+
+

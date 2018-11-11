@@ -1,0 +1,19 @@
+<h3>Contacto Emergencia</h3>
+{{#each webapidata as |item|}} 
+    <li id="profile" class="right">
+        Tipo Documento: {{item.TipoDocumento}}
+    </li>
+    <li id="profile" class="right">
+        Numero Documento: {{item.NumeroDocumento}}
+    </li>
+    <li id="profile" class="right">
+        Fecha Emision: {{item.FechaEmision}}
+    </li>
+    <li id="profile" class="right">
+        Fecha Vencimiento: {{item.FechaVencimiento}}
+    </li>
+    <li id="profile" class="right">
+        Observacion : {{item.Observacion}}
+    </li> 
+            
+{{/each}}

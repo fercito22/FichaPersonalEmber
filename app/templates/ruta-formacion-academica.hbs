@@ -1,0 +1,26 @@
+<h3>Vacaciones</h3>
+{{#each webapidata as |item|}} 
+    <li id="profile" class="right">
+        Gestion: {{item.Gestion}}
+    </li>
+    <li id="profile" class="right">
+        Grado Formacion : {{item.GradoFormacion}}
+    </li>
+    <li id="profile" class="right">
+        Titulo: {{item.titulo}}
+    </li>
+    <li id="profile" class="right">
+        Institucion : {{item.institucion}}
+    </li>
+    <li id="profile" class="right">
+        Fecha Inicio: {{item.fechainicio}}
+    </li>
+    <li id="profile" class="right">
+        Fecha Fin : {{item.fechafin}}
+    </li>
+    <li id="profile" class="right">
+        Estado : {{item.Estado}}
+    </li>  
+    <hr>
+            
+{{/each}}

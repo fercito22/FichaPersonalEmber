@@ -1,0 +1,62 @@
+<h3>Vacaciones</h3>
+{{!-- {{#each webapidata as |item|}} 
+    <li id="profile" class="right">
+        Gestion: {{item.Gestion}}
+    </li>
+    <li id="profile" class="right">
+        Total Dias : {{item.TotalDias}}
+    </li>
+    <li id="profile" class="right">
+        Saldo Dias: {{item.SaldoDias}}
+    </li>
+    <li id="profile" class="right">
+        Dias Udados : {{item.DiasUdados}}
+    </li>
+    <li id="profile" class="right">
+        Estado: {{item.Estado}}
+    </li>
+    <li id="profile" class="right">
+        ban : {{item.ban}}
+    </li> 
+    <hr>
+            
+{{/each}} --}}
+
+
+
+ <!-- DETAILS -->
+                <div id="about-card" class="card">
+                    <div class="card-content"  id="contenido">
+                        <!-- ABOUT PARAGRAPH -->                       
+
+                        <h4 id="tituloTabla">Vacaciones</h4>
+                        <hr id="separador">
+                        <div class="table-responsive">
+                          <table class="table table-bordered">
+                            <thead>
+                                {{!-- class="success"  --}}
+                               <tr style="font-weight: bold; font-size: 1.5em"> 
+                                   <th>Gestion</th>
+                                   <th>TotalDias</th>
+                                   <th>SaldoDias</th>
+                                   <th>DiasUdados</th>
+                                   <th>Estado</th>
+                                   <th>ban</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               {{#each webapidata as |item|}}
+                                    <tr class="info">
+                                        <th>Tipo Empresa: {{item.Gestion}}</th>
+                                        <th>Nombre Institucion: {{item.TotalDias}}</th>
+                                        <th>Cargo : {{item.SaldoDias}}</th>
+                                        <th>Desde : {{item.DiasUdados}}</th>
+                                        <th>Hasta : {{item.Estado}}</th>
+                                        <th>Motivo Retiro : {{item.ban}}</th>
+                                    </tr>
+                                {{/each}}
+                             </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
